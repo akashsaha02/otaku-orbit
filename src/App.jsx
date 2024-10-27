@@ -2,6 +2,8 @@ import { useState } from "react";
 import Blogs from "./components/Blogs/Blogs";
 import Bookmarks from "./components/Bookmarks/Bookmarks";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Newsletter from "./components/Newsletter/Newsletter";
 
 export default function App() {
   const [bookmarks, setBookmarks] = useState([]);
@@ -41,14 +43,12 @@ export default function App() {
             />
           </div>
           <div className="col-span-12 md:col-span-4 mt-5 md:mt-0">
-            <Bookmarks
-              bookmarks={bookmarks}
-              setBookmarks={setBookmarks}
-              readingTime={readingTime}
-            />
+            <Bookmarks bookmarks={bookmarks} setBookmarks={setBookmarks} readingTime={readingTime} />
           </div>
         </div>
+        <Newsletter />
       </div>
+      <Footer />
     </>
   );
 }

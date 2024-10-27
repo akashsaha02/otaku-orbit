@@ -58,7 +58,7 @@ const BlogCard = ({ blog, handleBookmarks, handleReadingTime }) => {
 
             {/* Modal */}
             {isModalOpen && (
-                <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+                <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 px-5">
                     <div className="bg-white rounded-lg shadow-lg max-w-2xl w-full p-6 relative">
                         <button
                             onClick={toggleModal}
